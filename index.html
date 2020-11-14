@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="top-panel.css">
+  <title>Top-panel</title>
+</head>
+
+<body>
+  <div class="container">
+    <h2>Mobile</h2>
+    <div class="mobile_row">
+
+      <span class="mobile logged_in">
+        <div class="logged">Logged in</div>
+        <div class="mobile_row_stripe">          
+          <img src="./graphic/logo_chic.jpg" class="mobile_logo">
+          <span class="control_bar">
+            <span class="user_data">
+              <img src="./graphic/avatar.jpg" class="mobile_avatar space">
+            </span>
+            <img src="./graphic/icn_menu.png" >
+          </span>  
+        </div>
+      </span>    
+
+      <span class="mobile">
+        <div class="logged">Logged out</div>
+        <div class="mobile_row_stripe">          
+          <img src="./graphic/logo_chic.jpg" class="mobile_logo">
+          <span class="control_bar">
+            <span class="user_data">
+              <img src="./graphic/icn_user.png">
+            </span>
+            <img src="./graphic/icn_menu.png">
+          </span>  
+        </div>
+      </span>
+    </div>
+
+    <h2>Desktop</h2>
+
+    <span class="desktop">
+      <div class="logged">Logged out</div>
+      <div class="desktop_row_stripe">          
+        <img src="./graphic/logo_chic.jpg" class="desktop_logo">
+        <span class="control_bar">
+          <span class="user_data">
+            <img src="./graphic/icn_home.png" class="circle_bg space">
+            <span class="space">
+              <img src="./graphic/icn_user.png">
+              <span class="desktop_login">Login</span>
+            </span>
+          </span>
+          <img src="./graphic/icn_menu.png" >
+        </span>  
+      </div>
+    </span>
+
+    <p>&nbsp;</p>
+
+    <span class="desktop logged_in">
+      <div class="logged">Logged in web app</div>
+      <div class="desktop_row_stripe">          
+        <img src="./graphic/logo_chic.jpg" class="desktop_logo">
+        <span class="control_bar">
+          <span class="user_data">
+            <img src="./graphic/icn_home.png" class="circle_bg space">
+            <img src="./graphic/icn_edit.png" class="desktop_edit space">
+            <span class="pos_rel">
+              <img src="./graphic/icn_bell.png" class="circle_bg space">
+              <span class="desktop_count">3</span>
+            </span>
+            <img src="./graphic/avatar.jpg" class="desktop_avatar space">
+          </span>
+          <img src="./graphic/icn_menu.png" >
+        </span>  
+      </div>
+    </span>
+
+  </div>
+  <script defer src="top-panel.js"></script>
+</body>
+</html>
