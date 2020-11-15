@@ -130,8 +130,7 @@ h2 {
 }
 
 .desktop_login {
-  margin-left: -4px;
-  margin-right: 10px;
+  margin: 0 10px 0 -4px;
   font-size: 18px;
 }
 
