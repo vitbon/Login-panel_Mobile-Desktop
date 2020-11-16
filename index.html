@@ -3,57 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="top-panel.css">
-  <title>Top-panel</title>
+  <title>Top panel (mobile & desktop versions)</title>
 </head>
 
 <body>
   <div class="container">
-    <h2>Mobile</h2>
-    <div class="mobile_row">
-
-      <span class="mobile">
-        <div class="logged">Logged out</div>
-        <div class="mobile_row_stripe">          
-          <a href="#"><img src="./graphic/logo_chic.jpg" class="mobile_logo"></a>
-          <span class="control_bar">
-            <span class="user_data">
-              <a href="#"><img src="./graphic/icn_user.png"></a>
-            </span>
-            <a href="#"><img src="./graphic/icn_menu.png"></a>
-          </span>  
-        </div>
-      </span>
-       
-      <span class="mobile logged_in">
-        <div class="logged">Logged in</div>
-        <div class="mobile_row_stripe">          
-          <a href="#"><img src="./graphic/logo_chic.jpg" class="mobile_logo"></a>
-          <span class="control_bar">
-            <span class="user_data">
-              <a href="#"><img src="./graphic/avatar.jpg" class="mobile_avatar space"></a>
-            </span>
-            <a href="#"><img src="./graphic/icn_menu.png" ></a>
-          </span>  
-        </div>
-      </span>    
-    </div>
-    
-    <p>&nbsp;</p>
-    <h2>Desktop</h2>
-    <p>&nbsp;</p>
-
-    <span class="desktop">
-      <div class="logged">Logged out</div>
-      <div class="desktop_row_stripe">          
-        <a href="#"><img src="./graphic/logo_chic.jpg" class="desktop_logo"></a>
+    <span class="panel logged">   <!--  add/remove class "logged"  -->
+      <div class="login_desktop">Logged in web app</div>
+      <div class="logout_desktop">Logged out</div>
+      <div class="login_mobile">Logged in</div>
+      <div class="logout_mobile">Logged out</div>
+      <div class="panel_row_stripe">          
+        <a href="#"><img src="./graphic/logo_chic.jpg" class="panel_logo"></a>
         <span class="control_bar">
           <span class="user_data">
-            <a href="#"><img src="./graphic/icn_home.png" class="circle_bg space"></a>
-            <span class="space">
-              <a href="#">
-                <img src="./graphic/icn_user.png"><span class="desktop_login">Login</span>
+            <a href="#"><img src="./graphic/icn_home.png" class="panel_circle_bg space"></a>
+            <a href="#"><img src="./graphic/icn_edit.png" class="panel_edit space"></a>
+            <span class="panel_pos_rel">
+              <a href="#"><img src="./graphic/icn_bell.png" class="panel_circle_bg space"></a>
+              <span class="panel_count">3</span>
+            </span>
+            <a href="#"><img src="./graphic/avatar.jpg" class="panel_avatar space"></a>
+            <span class="panel_user">
+              <a href="#" >
+                <img src="./graphic/icn_user.png"><span class="panel_login">Login</span>
               </a>
             </span>
           </span>
@@ -61,29 +35,6 @@
         </span>  
       </div>
     </span>
-
-    <p>&nbsp;</p>
-
-    <span class="desktop logged_in">
-      <div class="logged">Logged in web app</div>
-      <div class="desktop_row_stripe">          
-        <a href="#"><img src="./graphic/logo_chic.jpg" class="desktop_logo"></a>
-        <span class="control_bar">
-          <span class="user_data">
-            <a href="#"><img src="./graphic/icn_home.png" class="circle_bg space"></a>
-            <a href="#"><img src="./graphic/icn_edit.png" class="desktop_edit space"></a>
-            <span class="pos_rel">
-              <a href="#"><img src="./graphic/icn_bell.png" class="circle_bg space"></a>
-              <span class="desktop_count">3</span>
-            </span>
-            <a href="#"><img src="./graphic/avatar.jpg" class="desktop_avatar space"></a>
-          </span>
-          <a href="#"><img src="./graphic/icn_menu.png" ></a>
-        </span>  
-      </div>
-    </span>
-
   </div>
-  <script defer src="top-panel.js"></script>
 </body>
 </html>
